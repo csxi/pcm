@@ -37,7 +37,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="pcm-services" />
+    <orderEntry type="module" module-name="pcm-service" />
     <orderEntry type="module" module-name="pcm-dao" />
     <orderEntry type="module" module-name="pcm-utils" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.7.RELEASE" level="project" />

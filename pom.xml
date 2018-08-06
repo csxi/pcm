@@ -11,7 +11,7 @@
     <modules>
         <module>pcm-utils</module>
         <module>pcm-dao</module>
-        <module>pcm-services</module>
+        <module>pcm-service</module>
         <module>pcm-webapp</module>
     </modules>
     <properties>
