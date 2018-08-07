@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.ycgwl</groupId>
-            <artifactId>pcm-services</artifactId>
+            <artifactId>pcm-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--spring-->

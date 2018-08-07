@@ -9,10 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pcm-services</artifactId>
+    <artifactId>pcm-service</artifactId>
 
     <dependencies>
-
         <dependency>
             <groupId>com.ycgwl</groupId>
             <artifactId>pcm-dao</artifactId>

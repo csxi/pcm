@@ -1,8 +1,6 @@
 package com.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import persistent.UserMapper;
 import vo.UserVo;
 
 /**
@@ -11,12 +9,13 @@ import vo.UserVo;
  */
 @Service
 public class UserServiceImpl {
-
+/*
     @Autowired
-    private UserMapper userMapper;
+    private UserMapper userMapper;*/
 
     @Override
     public void addUser(UserVO user) throws Exception{
         userDao.addUser(user);
     }
+
 }
