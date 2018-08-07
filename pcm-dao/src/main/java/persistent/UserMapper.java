@@ -8,5 +8,6 @@ import vo.UserVo;
  * @createDate 2018/8/6 14:18
  */
 public interface UserMapper {
-    void addUser(@Param("user") UserVo user);
+
+    void addUser( UserVo user);
 }

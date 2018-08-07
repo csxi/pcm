@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
     <description>Spring persistence configuration</description>
 
     <!-- 创建SqlSessionFactory，同时指定数据源 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" /><!-- "classpath*:mappers/**/*.xml" -->
-        <property name="mapperLocations" value="classpath*:com.persistent/*.xml" />
+        <property name="dataSource" ref="dataSource" />
+        <property name="mapperLocations" value="classpath*:com.persistent/UserMapper.xml" />
         <property name="configLocation" value="classpath:spring-mybatis.xml" />
     </bean>
 
@@ -15,7 +19,7 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
         <!-- <property name="markerInterface" value="com.ycgwl.report.common.BaseMybatisRepository" /> -->
-        <property name="basePackage" value="com.ycgwl.kylin.security.persistent" />
+        <property name="basePackage" value="persistent" />
     </bean>
 
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
