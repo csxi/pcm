@@ -37,7 +37,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="pcm-service" />
     <orderEntry type="module" module-name="pcm-dao" />
     <orderEntry type="module" module-name="pcm-utils" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-dbcp2:2.1.1" level="project" />

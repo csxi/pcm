@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pcm-dao" />
-        <module name="pcm-service" />
         <module name="pcm-services" />
         <module name="pcm-utils" />
         <module name="pcm-webapp" />

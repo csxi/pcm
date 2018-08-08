@@ -1,9 +1,9 @@
 package controller;
 
-import com.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import service.UserService;
 import vo.UserVo;
 
 /**
@@ -13,21 +13,10 @@ import vo.UserVo;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-
-    @Autowired
-    private IUserService iUserService;
-
-    @RequestMapping("/login")
-    public String login(){
-        UserVo user = new UserVo();
-        user.setUserId("1");
-        user.setUserName("us");
-        user.setPassword("1");
-        try {
-            iUserService.addUser(user);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "login";
-    }
+  @Autowired
+  UserService userService;
+  public UserVo getUser(String userId){
+    return
+    userService.getUser(userId);
+  }
 }

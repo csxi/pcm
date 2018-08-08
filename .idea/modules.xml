@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pcm.iml" filepath="$PROJECT_DIR$/pcm.iml" />
       <module fileurl="file://$PROJECT_DIR$/pcm-dao/pcm-dao.iml" filepath="$PROJECT_DIR$/pcm-dao/pcm-dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pcm-service/pcm-service.iml" filepath="$PROJECT_DIR$/pcm-service/pcm-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pcm-utils/pcm-utils.iml" filepath="$PROJECT_DIR$/pcm-utils/pcm-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/pcm-webapp/pcm-webapp.iml" filepath="$PROJECT_DIR$/pcm-webapp/pcm-webapp.iml" />
     </modules>
