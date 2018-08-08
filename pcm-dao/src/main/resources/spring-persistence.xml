@@ -8,7 +8,7 @@
   <description>Spring persistence configuration</description>
 
   <!--自动扫描-->
-  <context:component-scan base-package="persistent"/>
+  <context:component-scan base-package="com.pcm.persistent"/>
   <!--引入数据库配置文件-->
   <bean id="propertyConfigurer"
     class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

@@ -1,10 +1,10 @@
-package controller;
+package com.pcm.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import service.UserService;
-import vo.UserVo;
+import com.pcm.service.UserService;
+import com.pcm.vo.UserVo;
 
 /**
  * @author <a href="mailto:157224@ycgwl.com">Guo chengxi</a>

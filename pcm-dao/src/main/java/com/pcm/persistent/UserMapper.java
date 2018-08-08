@@ -1,6 +1,6 @@
-package persistent;
+package com.pcm.persistent;
 
-import vo.UserVo;
+import com.pcm.vo.UserVo;
 
 /**
  * @author <a href="mailto:157224@ycgwl.com">Guo chengxi</a>

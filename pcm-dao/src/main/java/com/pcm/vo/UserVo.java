@@ -1,4 +1,4 @@
-package vo;
+package com.pcm.vo;
 
 /**
  * @author <a href="mailto:157224@ycgwl.com">Guo chengxi</a>

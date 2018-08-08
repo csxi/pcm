@@ -1,6 +1,6 @@
-package service;
+package com.pcm.service;
 
-import vo.UserVo;
+import com.pcm.vo.UserVo;
 
 /**
  * @author <a href="mailto:157224@ycgwl.com">Guo chengxi</a>

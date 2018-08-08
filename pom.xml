@@ -26,9 +26,15 @@
         <commons-pool2.version>2.4.2</commons-pool2.version>
         <ojdbc6.version>11.2.0.1.0</ojdbc6.version>
         <logback.version>1.2.2</logback.version>
+        <commons-lang.version>2.6</commons-lang.version>
     </properties>
     <dependencyManagement>
     <dependencies>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons-lang.version}</version>
+        </dependency>
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>
