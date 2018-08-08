@@ -2,17 +2,21 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:context="http://www.springframework.org/schema/context"
-  xmlns:mvc="http://www.springframework.org/schema/mvc"
   xmlns:aop="http://www.springframework.org/schema/aop"
   xsi:schemaLocation="http://www.springframework.org/schema/beans
   http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
-
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/aop
+  http://www.springframework.org/schema/aop/spring-aop.xsd"
+  default-lazy-init="true"
+>
   <!--自动扫描-->
   <context:component-scan base-package="com.pcm">
-    <context:exclude-filter type="annotation"
-      expression="org.springframework.stereotype.Controller"/>
+   <!-- <context:exclude-filter type="annotation"
+      expression="org.springframework.stereotype.Controller"/>-->
   </context:component-scan>
+
   <!--开启AOP-->
   <aop:config proxy-target-class="true"/>
 
@@ -36,7 +40,7 @@
     <!-- 下面value值的第一个'/'代表的路径是相对于HttpServletRequest.getContextPath()的值来的 -->
     <!-- anon：它对应的过滤器里面是空的,什么都没做,这里.do和.jsp后面的*表示参数,比方说login.jsp?main这种 -->
     <!-- authc：该过滤器下的页面必须验证后才能访问,它是Shiro内置的一个拦截器org.apache.shiro.web.filter.authc.FormAuthenticationFilter -->
-    <property name="filterChainDefinitions">
+  <!--  <property name="filterChainDefinitions">
       <value>
         /statics/**=anon
         /static/**=anon
@@ -48,22 +52,22 @@
         /captcha.jpg=anon
         /**=authc
       </value>
-    </property>
+    </property>-->
   </bean>
   <!-- Shiro默认会使用Servlet容器的Session,可通过sessionMode属性来指定使用Shiro原生Session -->
   <!-- 即<property name="sessionMode" value="native"/>,详细说明见官方文档 -->
   <!-- 这里主要是设置自定义的单Realm应用,若有多个Realm,可使用'realms'属性代替 -->
   <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
-    <property name="realm" ref="userRealm"/>
+    <!--刚配置时，先把这条注释掉，等后面写了MyRealm.java时，再把它的注释去掉，因为如果没有去掉就会在
+tomcat开启时报一个错误 -->
+   <!-- <property name="realm" ref="userRealm"/>-->
   </bean>
   <!-- Shiro生命周期处理器 -->
   <!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
   <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
 
-
   <!-- 配置国际化资源文件 -->
   <bean id="messageSource"
     class="org.springframework.context.support.ResourceBundleMessageSource">
   </bean>
-  <mvc:annotation-driven/>
 </beans>
