@@ -28,5 +28,10 @@
         <artifactId>logback-classic</artifactId>
         <scope>provided</scope>
     </dependency>
+    <!--shiro-->
+    <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-spring</artifactId>
+    </dependency>
 </dependencies>
 </project>
