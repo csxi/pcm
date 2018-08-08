@@ -23,7 +23,7 @@
       </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
     <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder" charset="UTF-8">
-      <layout class="com.ycgwl.kylin.util.logback.FrameworkPatternLayout">
+      <layout class="com.pcm.util.logback.FrameworkPatternLayout">
         <pattern>%cn %host %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %lo[%line] - %msg%n</pattern>
       </layout>
     </encoder>
@@ -44,7 +44,7 @@
       </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
     <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder" charset="UTF-8">
-      <layout class="com.ycgwl.kylin.util.logback.FrameworkPatternLayout">
+      <layout class="com.pcm.util.logback.FrameworkPatternLayout">
         <pattern>%cn %host %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %lo[%line] - %msg%n</pattern>
       </layout>
     </encoder>
@@ -65,7 +65,7 @@
       </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
     <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder" charset="UTF-8">
-      <layout class="com.ycgwl.kylin.util.logback.FrameworkPatternLayout">
+      <layout class="com.pcm.util.logback.FrameworkPatternLayout">
         <pattern>%cn %host %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %lo{50} - %msg%n</pattern>
       </layout>
     </encoder>
@@ -86,7 +86,7 @@
       </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
     <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder" charset="UTF-8">
-      <layout class="com.ycgwl.kylin.util.logback.FrameworkPatternLayout">
+      <layout class="com.pcm.util.logback.FrameworkPatternLayout">
         <pattern>%cn %host %d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %lo{50} - %msg%n</pattern>
       </layout>
     </encoder>
